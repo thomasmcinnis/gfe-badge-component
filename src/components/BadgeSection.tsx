@@ -17,7 +17,7 @@ interface BadgeRowProps {
 
 function BadgeRow({ role }: BadgeRowProps) {
   return (
-    <div className="flex gap-6 items-start">
+    <div className="flex gap-6 items-center">
       {badgeSizes.map((size) => (
         <BadgeComponent size={size} role={role} key={`${size}-${role}`}>
           Label
